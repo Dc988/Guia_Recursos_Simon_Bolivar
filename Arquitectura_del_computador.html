@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmia y Programación - Guía de Recursos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .index-sidebar {
+            position: fixed;
+            top: 80px;
+            left: 20px;
+            width: 250px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .index-sidebar a {
+            display: block;
+            margin-bottom: 10px;
+            color: #137e05;
+            text-decoration: none;
+        }
+
+        .index-sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .content-section {
+            margin-left: 300px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #03771c;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        a.enlace-boton {
+            text-decoration: none;
+            color: white;
+            background-color: #07690b;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+            margin-right: 20px;
+        }
+
+        a.enlace-boton:hover {
+            background-color: #1c6d04;
+            transform: scale(1.05);
+        }
+
+        a.instrucciones {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .search-container {
+            margin: 20px 0;
+            text-align: right;
+        }
+
+        .search-container input {
+            width: 870px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        .carousel-item {
+            text-align: left;
+        }
+
+        .carousel-item img {
+            width: 120px;
+            height: auto;
+            object-fit: contain;
+            margin-right: 15px;
+            float: left;
+        }
+
+        .carousel-caption {
+            color: black;
+            margin-left: 100px;
+            margin-top: -50px;
+        }
+
+        .carousel-inner {
+            margin-left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Guía de Recursos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="index-sidebar">
+        <h5>Índice</h5>
+        <a href="#programas">Programas/Simuladores</a>
+        <a href="#instrucciones">Instrucciones</a>
+        <a href="#documentos">Documentos/Artículos</a>
+    </div>
+
+    <div class="container">
+        <!-- Barra de búsqueda -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar programa, instrucciones o documentación..." onkeyup="filterContent()">
+        </div>
+
+        <section id="introduccion" class="content-section">
+            <h2>ARQUITECTURA DEL COMPUTADOR</h2>
+        </section>
+
+        <section id="programas" class="content-section">
+            <h2>Programas/Simuladores</h2>
+            <ul id="programList">
+                <li class="content-item">
+                    <a href="https://code.visualstudio.com" target="_blank" class="enlace-boton">Visual Studio Code (VS Code)</a>
+                    <a href="#instrucciones" class="instrucciones">Instrucciones</a>
+                </li>
+                <li class="content-item">
+                    <a href="https://docs.github.com/en/get-started/start-your-journey/about-github-and-git" target="_blank"
+                        class="enlace-boton">Git y GitHub</a>
+                    <a href="#instrucciones" class="instrucciones">Instrucciones</a>
+                </li>
+                <li class="content-item">
+                    <a href="https://ubuntu.com" target="_blank" class="enlace-boton">Ubuntu (Linux)</a>
+                    <a href="#instrucciones" class="instrucciones">Instrucciones</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="instrucciones" class="content-section">
+            <h2>Instrucciones</h2>
+            <ul id="instructionList">
+                <li class="content-item">
+                    <div class="video-container" onclick="window.open('https://youtu.be/X_Z7d04x9-E?si=97aL7eQyzHNvUUQ6', '_blank')">
+                        <iframe src="https://www.youtube.com/embed/X_Z7d04x9-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a class="enlace-boton" style="display:inline-block">Visual Studio Code (VS Code)</a>
+                </li>
+                <li class="content-item">
+                    <div class="video-container" onclick="window.open('https://youtu.be/jdXKwLNUfmg?si=HxL_o99aPBEmJn1i', '_blank')">
+                        <iframe src="https://www.youtube.com/embed/jdXKwLNUfmg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a class="enlace-boton" style="display:inline-block">Git y GitHub</a>
+                </li>
+                <li class="content-item">
+                    <div class="video-container" onclick="window.open('https://youtu.be/Q8yKlcUZveE?si=uplsHsljgE5h4Vbg', '_blank')">
+                        <iframe src="https://www.youtube.com/embed/Q8yKlcUZveE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a class="enlace-boton" style="display:inline-block">Ubuntu (Linux)</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Documentos/Artículos con Carrusel -->
+        <section id="documentos" class="content-section">
+            <h2>Documentos/Artículos</h2>
+            <div id="documentCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active content-item">
+                        <div class="d-flex align-items-center">
+                            <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="Visual Studio Code" class="me-3">
+                            <div>
+                                <h5>Visual Studio Code (VS Code)</h5>
+                                <p><a href="https://code.visualstudio.com/docs" target="_blank" class="enlace-boton">Documentación Oficial</a></p>
+                                <p><a href="https://www.inars.net/blog/curso-visual-studio-code" target="_blank" class="enlace-boton">Curso Gratuito</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item content-item">
+                        <div class="d-flex align-items-center">
+                            <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" alt="Git y GitHub" class="me-3">
+                            <div>
+                                <h5>Git y GitHub</h5>
+                                <p><a href="https://git-scm.com/doc" target="_blank" class="enlace-boton">Documentación Oficial de Git</a></p>
+                                <p><a href="https://docs.github.com/es" target="_blank" class="enlace-boton">Guía de GitHub</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item content-item">
+                        <div class="d-flex align-items-center">
+                            <img src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="Ubuntu (Linux)" class="me-3">
+                            <div>
+                                <h5>Ubuntu (Linux)</h5>
+                                <p><a href="https://ubuntu.com/tutorials" target="_blank" class="enlace-boton">Tutoriales de Ubuntu</a></p>
+                                <p><a href="https://help.ubuntu.com/" target="_blank" class="enlace-boton">Documentación de Ubuntu</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#documentCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#documentCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function filterContent() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const contentItems = document.querySelectorAll('.content-item');
+
+            contentItems.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(input)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <footer class="footer">
+        <p>"La única forma de hacer un gran trabajo es amar lo que haces." - Steve Jobs</p>
+        <p>Universidad Simón Bolívar</p>
+        <p>Dirección: Carrera 59 # 59-65, Barranquilla, Colombia</p>
+        <p>Atención a estudiantes PBX: +57 (605) 3185510 PBX +57 (605) 3444333 Fax: +57 (605) 3682892</p>
+        <div>
+            <a href="https://www.instagram.com/unisimon/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
+                    width="30">
+            </a>
+            <a href="https://www.facebook.com/unisimonbolivar" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                    alt="Facebook" width="30">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
